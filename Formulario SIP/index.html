@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="Generalitat Valenciana.png" alt="generalitat valenciana"> 
+        <div class="texto">Cita Previa-Identificacion de la persona solicitante</div>
+        
+        <h1>DATOS DE LA PERSONA SOLICITANTE</h1>
+        <p>Introduzca su número de tarjeta SIP y su fecha de nacimiento:</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="numero-sip">Número SIP:</label>
+                <input type="text" id="numero-sip" name="numero-sip" required>
+            </div>
+            <div class="form-group">
+                <label for="dia">Día:</label>
+                <input type="number" id="dia" name="dia" min="1" max="31" required>
+            </div>
+            <div class="form-group">
+                <label for="mes">Mes:</label>
+                <input type="number" id="mes" name="mes" min="1" max="12" required>
+            </div>
+            <div class="form-group">
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" name="anio" min="1900" max="2023" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="cards-section">
+            <p><strong>Ejemplo de tarjetas SIP:</strong></p>
+            <img src="cita.png" alt="Tarjetas SIP de ejemplo">
+            <img src="Tarjeta.png" alt="Tarjeta SIP ejemplo 2"> 
+        </div>
+        
+    </div>
+</body>
+</html>
